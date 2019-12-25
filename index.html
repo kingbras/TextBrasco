@@ -2,7 +2,7 @@
 <head>
     <!--Add your title here-->
       <title>King Brasco</title>            
-    <img src="https://www.pastepic.xyz/images/2019/12/24/kingbrascomusicFinal-File-02c0715e2ca9dc070d.th.jpg" alt="Black background with gold and white king brasco logo">
+    
     <!--This code makes the website responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -50,7 +50,7 @@
     
                 // Send post to API
                 $.ajax({
-                    url: 'kingbras.superphone.io', // Url where to submit the request
+                    url: 'https://kingbras.superphone.io', // Url where to submit the request
                     type: "POST",
                     beforeSend: function (request) {
                         request.setRequestHeader("Access-Control-Allow-Origin", "*");
@@ -194,7 +194,8 @@
     <body>
     <div class="page-center">
     <div class="custom-form">
-        <div class="container">                                                                              
+        <div class="container">  
+		<div class="center logo"><img src="https://www.pastepic.xyz/images/2019/12/24/kingbrascomusicFinal-File-02c0715e2ca9dc070d.th.jpg" alt="Black background with gold and white king brasco logo"></div>
             <h1 class="text-center" style="font-weight: bold">King Brasco</h1>
             <p class="text-center" style="font-size: 21px">PLEASE ENTER YOUR PHONE NUMBER<br>AND I WILL TEXT YOU RIGHT BACK:</p>
             <form id="addContact" class="form-horizontal" style="min-width: 100%" method="POST" action="#" autocomplete="false" data-parsley-validate>
